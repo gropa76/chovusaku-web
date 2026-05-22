@@ -42,11 +42,10 @@ section > .obal { padding-left: calc(var(--pruh) + 2rem); }
 .navigace {
   position: sticky; top: 0; z-index: 100;
   display: flex; align-items: center; justify-content: space-between;
-  padding: 1rem 2.5rem; background: rgba(253,248,242,.95);
-  backdrop-filter: blur(10px); border-bottom: 2px solid rgba(212,112,42,.12);
+  padding: 0 2.5rem; background: rgba(237,231,220,.98);
+  backdrop-filter: blur(10px); overflow: visible;
 }
-.navigace__logo { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 600; color: var(--tmava); display: flex; align-items: center; gap: .6rem; }
-.navigace__logo i { color: var(--akcent); }
+.navigace__logo-obrazek { height: 220px; width: auto; display: block; filter: drop-shadow(0 2px 8px rgba(107,76,53,.3)); position: relative; z-index: 101; margin-bottom: -90px; }
 .navigace__odkazy { display: flex; gap: 2rem; }
 .navigace__odkazy a { font-size: .88rem; font-weight: 700; color: var(--tlumena); letter-spacing: .04em; text-transform: uppercase; transition: color .2s; position: relative; padding-bottom: 2px; }
 .navigace__odkazy a::after { content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 2px; background: var(--akcent); border-radius: 2px; transition: width .25s; }
