@@ -164,16 +164,19 @@ section > .obal { padding-left: calc(var(--pruh) + 2rem); }
   .kontakt__mrize { grid-template-columns: 1fr; }
 }
 @media (max-width: 768px) {
-  .navigace { padding: 1rem 1.2rem; }
-  .navigace__odkazy { gap: 1rem; }
-  .navigace__odkazy a { font-size: .8rem; }
-  .uvod { flex-direction: column; text-align: center; padding: 5rem 1.5rem 3rem calc(var(--pruh) + 1.5rem); min-height: auto; gap: 2rem; }
+  .navigace { padding: .3rem 1.2rem; overflow: visible; }
+  .navigace__logo-obrazek { height: 70px; margin-bottom: -15px; }
+  .navigace__odkazy { gap: .8rem; }
+  .navigace__odkazy a { font-size: .75rem; }
+  .uvod { flex-direction: column; text-align: center; padding: 4rem 1.5rem 3rem 1.5rem; min-height: auto; gap: 2rem; }
   .uvod__popis { margin: 0 auto 2rem; }
-  .uvod__foto { width: 100%; max-width: 340px; height: 340px; }
+  .uvod__foto { width: 100%; max-width: 320px; height: 320px; }
   .info-ramecek__seznam { grid-template-columns: 1fr; }
   .bocni-pruh { display: none; }
   .uvod, .informace, .nabidka, .kontakt { padding-left: 1.5rem; }
+  section > .obal { padding-left: 1.5rem; }
 }
 @media (max-width: 480px) {
-  .navigace__odkazy { display: none; }
+  .navigace__odkazy { display: flex; flex-wrap: wrap; gap: .5rem; justify-content: flex-end; }
+  .navigace__odkazy a { font-size: .7rem; }
 }
